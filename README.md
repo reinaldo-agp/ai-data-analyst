@@ -6,9 +6,9 @@ El objetivo de este proyecto es demostrar cómo los Modelos de Lenguaje (LLM) pu
 
 Demo del Proyecto
 
-Aplicación Web: (agrega aquí tu enlace de Streamlit)
+Aplicación Web:(https://reinaldo-agp-ai-data-analyst-app-erjode.streamlit.app/)
 
-Repositorio: (agrega aquí tu enlace del repositorio)
+Repositorio: (https://github.com/reinaldo-agp/ai-data-analyst)
 
 Descripción del Proyecto
 
