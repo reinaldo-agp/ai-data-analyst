@@ -1,83 +1,79 @@
-Personal AI Data Analyst
+# 🤖 AI Data Analyst — Análisis de Datos Asistido por IA
 
-Aplicación interactiva de análisis de datos asistido por IA construida con Python y Streamlit, que permite cargar datasets y generar análisis exploratorios, visualizaciones e insights automáticamente.
+Aplicación interactiva que combina el poder de los Modelos de Lenguaje (LLM) con análisis de datos en tiempo real. Carga cualquier dataset y obtén análisis exploratorios, visualizaciones e insights automáticamente — sin escribir una sola línea de código.
 
-El objetivo de este proyecto es demostrar cómo los Modelos de Lenguaje (LLM) pueden asistir el flujo de trabajo de análisis de datos, permitiendo explorar datasets y obtener insights rápidamente.
+## 🎯 ¿Qué hace esta app?
 
-Demo del Proyecto
+Permite a cualquier persona (técnica o no) explorar un dataset en lenguaje natural y obtener análisis estadísticos y visualizaciones de forma inmediata.
 
-Aplicación Web:(https://reinaldo-agp-ai-data-analyst-app-erjode.streamlit.app/)
+Flujo de uso:
+1. Carga tu dataset (CSV)
+2. Haz preguntas en lenguaje natural: *"¿Cuáles son las variables con mayor correlación?"*, *"Muéstrame la distribución de ventas por región"*
+3. El LLM genera el análisis, las visualizaciones y los insights automáticamente
 
-Repositorio: (https://github.com/reinaldo-agp/ai-data-analyst)
+## 🛠️ Stack Tecnológico
 
-Descripción del Proyecto
+| Capa | Tecnología |
+|------|-----------|
+| Interfaz / UI | Streamlit |
+| Orquestación LLM | LangChain |
+| Análisis de datos | Pandas · NumPy |
+| Visualizaciones | Plotly · Matplotlib · Seaborn |
+| Lenguaje | Python 3.10+ |
 
-Esta aplicación permite a los usuarios cargar datasets y realizar Análisis Exploratorio de Datos (EDA) de manera automática.
+## 🚀 Cómo ejecutarlo
 
-Formatos de archivos soportados:
+### Requisitos previos
+- Python 3.10+
+- API Key de OpenAI o modelo local con Ollama
 
-CSV
+### Instalación
 
-Excel (XLSX)
+```bash
+# 1. Clona el repositorio
+git clone https://github.com/reinaldo-agp/ai-data-analyst.git
+cd ai-data-analyst
 
-JSON
+# 2. Instala las dependencias
+pip install -r requirements.txt
 
-Parquet
+# 3. Configura tu API key
+cp .env.example .env
+# Edita .env con tu OPENAI_API_KEY
 
-Una vez cargado el dataset, la aplicación puede generar automáticamente:
+# 4. Ejecuta la app
+streamlit run app.py
+```
 
-Resumen del dataset
+Luego abre tu navegador en `http://localhost:8501`
 
-Análisis estadístico
+## 💬 Ejemplos de preguntas que puedes hacer
 
-Visualizaciones
+- *"Dame un resumen estadístico de todas las variables numéricas"*
+- *"¿Hay valores nulos en el dataset? ¿En qué columnas?"*
+- *"Muéstrame un heatmap de correlaciones"*
+- *"¿Cuáles son los 5 registros con mayor valor en la columna ventas?"*
+- *"Identifica posibles outliers en el dataset"*
 
-Análisis de series temporales
+## 🧠 Conceptos clave demostrados
 
-Detección de anomalías
+- Agentes de análisis de datos con LangChain
+- Generación automática de código Python para visualizaciones
+- Ingeniería de prompts para análisis estadístico
+- Interfaz conversacional para exploración de datos
 
-Insights generados por IA
+## 🔭 Posibles extensiones
 
-Además, el proyecto integra modelos de lenguaje ejecutados localmente usando Ollama para generar explicaciones y sugerencias de análisis.
+- Soporte para archivos Excel y bases de datos SQL
+- Exportación de reportes automáticos en PDF
+- Memoria conversacional para análisis multi-turno
+- Deploy en Streamlit Cloud o Hugging Face Spaces
 
-¿Por qué usar Ollama?
+## 👤 Autor
 
-El proyecto utiliza Ollama para ejecutar modelos de lenguaje de forma local.
+Reinaldo Guerrero — Data Scientist Jr.
+[LinkedIn](https://www.linkedin.com/in/reinaldo-guerrero-payares) · [GitHub](https://github.com/reinaldo-agp)
 
-Principales ventajas:
+## 📄 Licencia
 
-Privacidad: los datos permanecen en tu máquina
-
-Sin costos de API
-
-Menor latencia
-
-Posibilidad de trabajar sin conexión
-
-Ideal para entornos empresariales
-
-Esto permite crear herramientas de análisis de datos basadas en IA sin enviar información sensible a servicios externos.
-
-Tecnologías Utilizadas
-
-Python
-Streamlit
-Pandas
-NumPy
-Matplotlib
-DuckDB (opcional)
-Ollama (integración con modelos LLM locales)
-
-Arquitectura de la Aplicación
-
-Carga del Dataset por el Usuario
-↓
-Procesamiento de Datos con Pandas / DuckDB
-↓
-Análisis Exploratorio de Datos (EDA)
-↓
-Generación de Visualizaciones
-↓
-Análisis opcional con IA usando Ollama
-↓
-Dashboard interactivo con Streamlit
+Licencia MIT — siéntete libre de usar y adaptar este proyecto.
